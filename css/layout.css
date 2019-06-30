@@ -1,0 +1,11 @@
+#headerLogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    font: 400 1.5rem 'Oleo Script', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    text-decoration: none;
+    font-style: italic;
+}

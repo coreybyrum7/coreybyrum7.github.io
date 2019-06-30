@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024) {
+    .mdl-layout--fixed-header>.mdl-layout__header {
+        position: absolute;
+        background-color: #000;
+    }
+    .mdl-layout__header .mdl-layout__drawer-button {
+        color: #fff;
+        background-color: #000;
+    }
+}
+
+.mdl-layout--fixed-header>.mdl-layout__header {
+    position: absolute;
+    background-color: #000;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: #fff;
+    background-color: #000;
+}
+
+.mdl-layout__content {
+    background-color: #000;
+    margin-top: 56px;
+}
+
+.mdl-layout:not(.is-small-screen) .mdl-layout--small-screen-only {
+    display: flex;
+}
+
+.mdl-layout:not(.is-small-screen) .mdl-layout--small-screen-only > i {
+    margin: auto;
+}

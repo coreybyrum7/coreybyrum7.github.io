@@ -1,0 +1,177 @@
+.homeImage {
+    background-image: url(/images/banner/SF_skyline.JPG);
+    background-size: cover;
+    height: 100vh   ;
+    background-position-y: bottom;
+    width: -webkit-fill-available;
+    position: fixed;
+}
+
+.banner-image-wrapper {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-basis: 100%;
+}
+
+.content-container {
+    width: 85%;
+    margin: 8rem auto 0;
+}
+
+.content-wrapper {
+    display: block;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 2.5rem 4rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.portfolio-commands-wrapper {
+    width: 100%;
+}
+
+.portfolio-commands {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.portfolio-command {
+    border-left: .1875rem solid transparent;
+    border-right: .1875rem solid transparent;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: inline-block;
+    font-size: 3.15rem;
+    font-family: aileronlight;
+    line-height: 3.2rem;
+    margin: 0 1%;
+    padding: .125rem .5rem 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.portfolio-command:first-of-type {
+    margin-left: 0;
+}
+
+.active {
+    border-bottom: .1875rem solid #1a73e8;
+    color: #1a73e8;
+}
+
+.active:focus {
+    outline: none;
+}
+
+.portfolio-command:not(.active):focus {
+    outline: none;
+    border-bottom: .1875rem solid #5f6368;
+    color: #5f6368;
+}
+
+.portfolio-content-container {
+    display: none;
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: aileronlight;
+}
+
+.content-separator-flat {
+    border-bottom: 1px solid grey;
+    padding: 25px 0;
+    width: 10%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 850px) {
+    .content-container {
+        margin-top: 8rem;
+    }
+    .content-wrapper {
+        padding: 3rem;
+    }
+    .portfolio-content-container {
+        margin-top: 2.25rem;
+    }
+    .portfolio-command {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin: 0 .5%;
+        min-width: 0;
+    }
+    .page-header {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .content-separator-flat {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .portfolio-content-container {
+        margin-top: 2.25rem;
+    }
+    .portfolio-command {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        margin: 0;
+        min-width: 0;
+    }
+    .page-header {
+        font-size: 1.25rem;
+        line-height: 1.6rem;
+    }
+    .content-separator-flat {
+        padding: 18px 0;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .content-wrapper {
+        padding: 2.5rem;
+    }
+    .portfolio-command {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        min-width: 0;
+        margin: 0;
+    }
+    .page-header {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .portfolio-content-container {
+        margin-top: 2rem;
+    }
+    .content-wrapper {
+        padding: 2rem;
+    }
+    .portfolio-command {
+        font-size: 1.75rem;
+        line-height: 1.75;
+        min-width: 0;
+        margin: 0;
+    }
+    .page-header {
+        font-size: 1rem;
+        line-height: 1.5rem;    
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .content-container {
+        margin-top: 6rem;
+    }
+}

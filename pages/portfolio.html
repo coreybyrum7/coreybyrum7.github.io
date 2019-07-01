@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="/css/aileron-fonts.css" />
     <link rel="stylesheet" href="/css/material-override.css" />
     <link rel="stylesheet" href="/css/layout.css" />
-    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/js/portfolio-command-bar.js"></script>
 </head>
 
 <body>
@@ -39,24 +41,32 @@
             <div class="banner-image homeImage">
                 <div class="banner-image-wrapper">
                     <div class="content-container">
-                        <div class="page-header">Hello there.</div>
                         <div class="content-wrapper">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio">
-                                        <div class="portfolio-image">
-                                            <img class="portfolio-icon" src="/images/portfolio.JPG" />
-                                        </div>
-                                        <div class="portfolio-text">Portfolio</div>
-                                    </div>
+                            <div class="portfolio-commands-wrapper">
+                                <ul class="portfolio-commands">
+                                    <li id="ux-command" class="portfolio-command active" selected aria-selected="true" tabindex="0">UX</li>
+                                    <li id="dev-command" class="portfolio-command" tabindex="0">Dev</li>
+                                    <li id="ui-command" class="portfolio-command" tabindex="0">UI</li>
+                                </ul>
+                            </div>
+                            <div id="ux" class="portfolio-content-container">
+                                <div class="page-header">
+                                    Elegant customer journeys are directly conducive to business success.
                                 </div>
-                                <div class="life-wrapper">
-                                    <div class="life">
-                                        <div class="life-image">
-                                            <img class="life-icon" src="/images/life-icon.jpg" />
-                                        </div>
-                                        <div class="life-text">Life</div>
-                                    </div>
+                                <div class="content-separator-flat"></div>
+                            </div>
+                            <div id="dev" class="portfolio-content-container">
+                                <div class="page-header">
+                                    A designer that likes to get his hands dirty.
                                 </div>
+                                <div class="content-separator-flat"></div>
+                            </div>
+                            <div id="ui" class="portfolio-content-container">
+                                <div class="page-header">
+                                    We might not like to admit it, but people do judge a book by its cover. Elegant user interfaces directly correlate to high user engagement and satisfaction.
+                                </div>
+                                <div class="content-separator-flat"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

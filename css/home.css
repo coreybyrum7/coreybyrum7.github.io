@@ -18,10 +18,11 @@
 }
 
 .page-header {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    line-height: 4rem;
     text-align: center;
     color: #fff;
-    font-size: 4rem;
     font-family: aileronlight;
 }
 

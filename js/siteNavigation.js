@@ -1,5 +1,5 @@
-var portfolioUrl = "http://www.coreybyrum7.github.io/pages/portfolio.html";
-var lifeUrl = "http://www.coreybyrum7.github.io/pages/life.html";
+var portfolioUrl = "http://www.coreybyrum7.github.io/portfolio.html";
+var lifeUrl = "http://www.coreybyrum7.github.io/life.html";
 
 $(document).ready(function () {
 

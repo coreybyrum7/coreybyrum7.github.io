@@ -1,7 +1,7 @@
 .homeImage {
     background-image: url(/images/banner/SF_skyline.JPG);
     background-size: cover;
-    height: 100vh;
+    height: 100vh   ;
     background-position-y: bottom;
     width: -webkit-fill-available;
 }
@@ -18,7 +18,7 @@
     margin: 0 auto;
     margin-top: 15rem;
     height: fit-content;
-    padding: 4rem 4rem 3rem;
+    padding: 4rem 4rem 3.5rem;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -158,7 +158,7 @@
 
 @media only screen and (max-width: 410px) {
     .content-wrapper {
-        padding: 2rem 2rem 1.5rem;
+        padding: 2rem;
     }
     .life-icon, .portfolio-icon {
         height: 7rem;

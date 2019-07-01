@@ -183,4 +183,7 @@
         line-height: 1.45rem;
         padding-top: 22px;
     }
+    .content-wrapper {
+        margin-top: 10rem;
+    }
 }

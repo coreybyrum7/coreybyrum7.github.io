@@ -1,0 +1,186 @@
+.homeImage {
+    background-image: url(/images/banner/SF_skyline.JPG);
+    background-size: cover;
+    height: 100%;
+    background-position-y: bottom;
+    width: -webkit-fill-available;
+}
+
+.banner-image-wrapper {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-basis: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15rem;
+    height: fit-content;
+    padding: 4rem 4rem 3rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.portfolio-wrapper, .life-wrapper {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.portfolio-wrapper {
+    padding-right: .5rem;
+}
+
+.life-wrapper {
+    padding-right: .5rem;
+}
+
+.life, .portfolio {
+    width: min-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.life:hover .life-icon, .portfolio:hover .portfolio-icon {
+    box-shadow: 0px 6px 16px 11px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.life:hover .life-text:before, .portfolio:hover .portfolio-text:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.portfolio {
+    text-align: right;
+    margin-right: 1.5rem;
+    flex-grow: 10;
+}
+
+.life {
+    float: left;
+    margin-left: 1.5rem;
+}
+
+.life-icon, .portfolio-icon {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 150px;
+    box-shadow: 0 1px 10px 8px rgba(0,0,0,0.12), 0 3px 11px 0px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.life-text, .portfolio-text {
+    text-align: center;
+    padding-top: 30px;
+    color: #000;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    text-decoration: none;
+    position: relative;
+    font-family: aileronlight;
+}
+
+.life-text:before, .portfolio-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 650px) {
+    .life-icon, .portfolio-icon {
+        height: 12rem;
+        width: 12rem;
+    }
+    .life {
+        margin-left: 1.3rem;
+    }
+    .portfolio {
+        margin-right: 1.3rem;
+    }
+    .life-text, .portfolio-text {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .life-icon, .portfolio-icon {
+        height: 10rem;
+        width: 10rem;
+    }
+    .life-text, .portfolio-text {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+    .life {
+        margin-left: 1rem;
+    }
+    .portfolio {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .content-wrapper {
+        padding: 2.5rem;
+    }
+    .life-icon, .portfolio-icon {
+        height: 9rem;
+        width: 9rem;
+    }
+    .life-text, .portfolio-text {
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+        padding-top: 24px;
+    }
+    .life {
+        margin-left: .75rem;
+    }
+    .portfolio {
+        margin-right: .75rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .content-wrapper {
+        padding: 2rem 2rem 1.5rem;
+    }
+    .life-icon, .portfolio-icon {
+        height: 7rem;
+        width: 7rem;
+    }
+    .life-text, .portfolio-text {
+        font-size: 1.55rem;
+        line-height: 1.55rem;
+        padding-top: 22px;
+    }
+    .life {
+        margin-left: .5rem;
+    }
+    .portfolio {
+        margin-right: .5rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .life-text, .portfolio-text {
+        font-size: 1.45rem;
+        line-height: 1.45rem;
+        padding-top: 22px;
+    }
+}

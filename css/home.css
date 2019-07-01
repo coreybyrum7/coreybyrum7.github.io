@@ -113,6 +113,9 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .content-container {
+        margin-top: 8rem;
+    }
     .page-header {
         font-size: 3.5rem;
         line-height: 3.5rem;
@@ -209,6 +212,9 @@
 }
 
 @media only screen and (max-width: 380px) {
+    .content-container {
+        margin-top: 6rem;
+    }
     .life-text, .portfolio-text {
         font-size: 1.45rem;
         line-height: 1.45rem;

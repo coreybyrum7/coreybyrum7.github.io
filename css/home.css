@@ -4,6 +4,7 @@
     height: 100vh   ;
     background-position-y: bottom;
     width: -webkit-fill-available;
+    position: fixed;
 }
 
 .banner-image-wrapper {

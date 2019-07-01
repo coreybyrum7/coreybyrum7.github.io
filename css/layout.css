@@ -1,3 +1,7 @@
+body {
+    height: 100%;
+}
+
 #headerLogo {
     position: absolute;
     top: 0;
@@ -9,4 +13,9 @@
     color: #fff;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
     text-decoration: none;
+}
+
+#headerLogo > i {
+    top: 6px;
+    position: relative;
 }

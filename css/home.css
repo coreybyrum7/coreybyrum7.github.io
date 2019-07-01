@@ -1,13 +1,13 @@
 .homeImage {
     background-image: url(/images/banner/SF_skyline.JPG);
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     background-position-y: bottom;
     width: -webkit-fill-available;
 }
 
 .banner-image-wrapper {
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.75);
     display: flex;
     flex-basis: 100%;

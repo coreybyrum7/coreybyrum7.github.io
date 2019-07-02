@@ -1,3 +1,10 @@
+.mdl-navigation__link {
+    font-family: aileronlight;
+    font-size: 2rem;
+    color: #000 !important;
+    text-align: center;
+}
+
 @media screen and (max-width: 1024) {
     .mdl-layout--fixed-header>.mdl-layout__header {
         position: absolute;

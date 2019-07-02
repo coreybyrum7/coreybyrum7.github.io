@@ -128,7 +128,7 @@
     width: 100%;
     max-width: 750px;
     box-shadow: 0 1px 10px 8px rgba(0,0,0,0.12), 0 3px 11px 0px rgba(0,0,0,0.24);
-    border-radius: 10px;
+    border-radius: 4px;
     margin: 1.5rem auto;
     text-align: center;
     display: block;
@@ -172,6 +172,7 @@
     }
     .content-separator-flat {
         padding: 18px 0;
+        margin: 0 1rem;
     }
 }
 
@@ -197,8 +198,14 @@
         margin-top: 2rem;
     }
     .content-wrapper {
-        padding: 2rem;
+        padding: 2rem 0;
         margin: 0;
+    }
+    .content-sub-wrapper {
+        margin: 2rem 0 3rem;
+    }
+    .portfolio-commands-wrapper {
+        padding: 0 1rem;
     }
     .portfolio-command {
         font-size: 1.75rem;
@@ -209,6 +216,10 @@
     .page-header,.article-description {
         font-size: 1rem;
         line-height: 1.5rem;    
+        padding: 0 1rem;
+    }
+    .article-header {
+        padding: 1rem;
     }
 }
 

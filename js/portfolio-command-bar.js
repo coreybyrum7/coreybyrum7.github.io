@@ -42,4 +42,26 @@ $(document).ready(function () {
         }
     });
 
+    $(".article-header-wrapper").click(function() {
+        var article = $(this).closest('.article');
+        var articleArrow = article.find('.arrow');
+        if (articleArrow.hasClass('article-drop-arrow')) {
+            articleArrow.removeClass('article-drop-arrow');
+            articleArrow.addClass('article-up-arrow');
+            article.find('.article-description').slideUp('fast');
+            article.find('.article-examples').slideUp('fast');
+        } else {
+            articleArrow.removeClass('article-up-arrow');
+            articleArrow.addClass('article-drop-arrow');
+            article.find('.article-description').slideDown('fast');
+            article.find('.article-examples').slideDown('fast');
+        }
+    });
+
+    $(".article-header-wrapper").on('keyup', function (e) {
+        if (e.keyCode == 13) {
+
+        }
+    });
+
 });

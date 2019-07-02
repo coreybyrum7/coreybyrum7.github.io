@@ -29,7 +29,6 @@
     height: 100%;
     padding: 2.5rem 4rem;
     background-color: #fff;
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .portfolio-commands-wrapper {
@@ -94,6 +93,10 @@
     text-align: left;
 }
 
+.article-examples {
+    padding-top: .5rem;
+}
+
 .examples-arrow-wrapper {
     margin: 0 auto;
     text-align: center;
@@ -132,7 +135,7 @@
 }
 
 .article-header-wrapper {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     padding: 8px 14px;
     margin-left: -14px;
     display: inline-block;
@@ -163,8 +166,17 @@
 .article-description {
     padding-bottom: 14px;
 }
+.article-image-description {
+    font-family: aileronlight;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1a73e8;
+    display: block;
+    text-align: center;
+}
+
 .article-example {
-    margin-top: 1.5rem;
+    margin: 1.75rem 0;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(170, 169, 169, 0.87);
 }
@@ -258,10 +270,13 @@
         min-width: 0;
         margin: 0;
     }
-    .page-header,.article-description {
+    .page-header,.article-description, .article-image-description {
         font-size: 1rem;
         line-height: 1.5rem;    
         padding: 0 1rem 14px;
+    }
+    .article-image-description.last {
+        padding: 0 14px;
     }
     .article-header-wrapper {
         padding: 1rem;

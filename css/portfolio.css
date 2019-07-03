@@ -82,13 +82,13 @@
     margin-top: 3rem;
     text-align: left;
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 1.55rem;
     font-family: aileronlight;
 }
 
 .content-separator-flat {
     border-bottom: 1px solid rgba(87, 86, 86, 0.87);
-    padding: 25px 0;
+    padding: 15px 0;
     width: 10%;
     text-align: left;
 }
@@ -131,7 +131,7 @@
 }
 
 .content-sub-wrapper {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .article-header-wrapper {
@@ -148,14 +148,16 @@
 .article-header {
     font-family: aileronlight;
     font-size: 2rem;
+    line-height: 2rem;
     color: #1a73e8;
     display: inline-block;
 }
 .article-drop-arrow, .article-up-arrow {
+    top: 5px;
     display: inline-block;
     color: #1a73e88a;
-    vertical-align: top;
     line-height: 1.25rem;
+    position: relative;
 }
 .article-drop-arrow i {
     font-size: 1.8rem;
@@ -179,7 +181,11 @@
 
 .article-example {
     margin: 1.75rem 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: none;
+}
+
+.article-examples .article-example:last-of-type {
     border-bottom: 1px solid rgba(170, 169, 169, 0.87);
 }
 
@@ -215,7 +221,7 @@
         line-height: 1.8rem;
     }
     .content-separator-flat {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 }
 
@@ -234,7 +240,7 @@
         line-height: 1.6rem;
     }
     .content-separator-flat {
-        padding: 18px 0;
+        padding: 8px 0;
         margin: 0 1rem;
     }
 }
@@ -265,7 +271,7 @@
         margin: 0;
     }
     .content-sub-wrapper {
-        margin: 2rem 0 3rem;
+        margin: 1rem 0 2rem;
     }
     .portfolio-commands-wrapper {
         padding: 0 1rem;

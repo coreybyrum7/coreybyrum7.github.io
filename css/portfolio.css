@@ -93,10 +93,6 @@
     text-align: left;
 }
 
-.article-examples {
-    padding-top: .5rem;
-}
-
 .examples-arrow-wrapper {
     margin: 0 auto;
     text-align: center;
@@ -180,14 +176,14 @@
 }
 
 .article-example {
-    margin: 1.75rem 0;
+    margin: 2.25rem 0;
     padding-bottom: 1rem;
-    border-bottom: none;
-}
-
-.article-examples .article-example:last-of-type {
     border-bottom: 1px solid rgba(170, 169, 169, 0.87);
 }
+
+/* .article-examples .article-example:last-of-type {
+    border-bottom: 1px solid rgba(170, 169, 169, 0.87);
+} */
 
 .article-example video {
     width: 100%;

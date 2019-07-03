@@ -168,11 +168,16 @@
 }
 .article-image-description {
     font-family: aileronlight;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: inherit;
+    line-height: 2.5rem;
     color: #1a73e8;
     display: block;
     text-align: center;
+}
+
+.article-example .article-image-description.last {
+    margin-bottom: 2.25rem;
 }
 
 .article-example {
@@ -292,6 +297,10 @@
     }
     .article-header {
         font-size: 1.75rem;
+        line-height: 1.75rem;
+    }
+    .article-image-description {
+        font-size: 1.5rem;
         line-height: 1.75rem;
     }
     .examples-bar-wrapper {

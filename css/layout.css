@@ -25,9 +25,13 @@ body {
     text-decoration: none;
 }
 
-#headerLogo > i {
-    top: 6px;
+#headerLogo > img {
     position: relative;
+    vertical-align: middle;
+    max-height: 40px;
+    max-width: 40px;
+    top: -1px;
+    border-radius: 2px;
 }
 
 a {

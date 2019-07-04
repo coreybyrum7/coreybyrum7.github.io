@@ -184,6 +184,11 @@
     margin: 2.25rem 0;
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(170, 169, 169, 0.87);
+    border-width: 50%;
+}
+
+.article-examples .article-example:last-of-type {
+    border-bottom: 1px solid rgba(170, 169, 169, 0.87);
 }
 
 /* .article-examples .article-example:last-of-type {

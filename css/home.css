@@ -222,4 +222,10 @@
         line-height: 1.45rem;
         padding-top: 22px;
     }
+    .page-header {
+        color: #000;
+    }
+    .banner-image-wrapper {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }

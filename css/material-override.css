@@ -46,3 +46,8 @@
 .mdl-mini-footer {
     background-color: #000;
 }
+
+.darkHeader {
+    background-color: rgba(0,0,0,0.9) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.9) !important;
+}

@@ -1,3 +1,36 @@
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: #000;
+    background-color: #eeeeeebd;
+    border-radius: 50px;
+    margin: 8px;
+    height: 40px;
+    width: 40px;
+    line-height: 42px;
+    box-shadow: none;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.mdl-layout__header .mdl-layout__drawer-button:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.mdl-layout__header .mdl-layout__drawer-button > i {
+    color: #494949b8;
+    font-size: 20px;
+}
+
+.mdl-layout--fixed-header > .mdl-layout__header {
+    position: absolute;
+    background-color: #fff;
+    min-height: 56px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.mdl-layout__content {
+    background-color: #fff;
+    margin-top: 55px;
+}
+
 .homeImage {
     background-image: url(/images/banner/SF_skyline.JPG);
     background-size: cover;
@@ -5,10 +38,6 @@
     background-position-y: bottom;
     width: -webkit-fill-available;
     position: relative;
-}
-
-.mdl-layout__content {
-    background-color: #fff;
 }
 
 .banner-image-wrapper {
@@ -47,7 +76,7 @@
     border-left: .1875rem solid transparent;
     border-right: .1875rem solid transparent;
     box-sizing: border-box;
-    color: #999a9c;
+    color: #494949b8;
     display: inline-block;
     font-size: 3.15rem;
     font-family: aileronlight;

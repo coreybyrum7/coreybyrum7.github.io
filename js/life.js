@@ -30,6 +30,7 @@ var imageClick = function (elem) {
     modal.style.display = "block";
     modalImg.src = imageSrc;
     modalCaption.innerHTML = alt;
+    span.focus();
 
 
     // When the user clicks on <span> (x), close the modal

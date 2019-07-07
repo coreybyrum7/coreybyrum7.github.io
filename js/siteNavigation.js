@@ -1,7 +1,12 @@
+var homeUrl = "https://coreybyrum7.github.io/index.cshtml";
 var portfolioUrl = "https://coreybyrum7.github.io/pages/portfolio.html";
 var lifeUrl = "https://coreybyrum7.github.io/pages/life.html";
 
 $(document).ready(function () {
+
+    $(".sidebar-logo").on('click', function () {
+        window.location.href = homeUrl;
+    });
 
     $(".life").on('click', function () { 
         window.location.href = lifeUrl;

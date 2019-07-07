@@ -35,8 +35,7 @@
 
 .mdl-layout:not(.is-small-screen) .mdl-layout--small-screen-only {
     display: flex;
-    min-height: 56px;
-    margin: 0;
+    margin: 8px;
 }
 
 .mdl-layout:not(.is-small-screen) .mdl-layout--small-screen-only > i {

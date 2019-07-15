@@ -19,6 +19,7 @@
     <script src="/js/jquery/jquery-3.4.1.min.js"></script>
     <script src="/js/siteNavigation.js"></script>
     <script src="/js/portfolio-command-bar.js"></script>
+    <script src="/js/portfolio_topic_switcher.js"></script>
 </head>
 
 <body>
@@ -34,203 +35,208 @@
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <div class="banner-image homeImage">
-                <div class="banner-image-wrapper">
-                    <div class="content-container">
-                        <div class="content-wrapper">
-                            <div class="portfolio-commands-wrapper">
-                                <ul class="portfolio-commands">
-                                    <li id="dev-command" class="portfolio-command active" tabindex="0">Dev</li>
-                                    <li id="ux-command" class="portfolio-command" selected aria-selected="true" tabindex="0">UX & UI Projects</li>
-                                </ul>
-                            </div>
-                            <div id="dev" class="portfolio-content-container">
-                                <div class="page-header">
-                                    I enjoy bringing a creative perspective to app development. However, my origins reside in the full-stack realm.
-                                </div>
+            <div class="content-container">
+                <div class="content-wrapper">
+                    <div class="portfolio-commands-wrapper">
+                        <ul class="portfolio-commands">
+                            <li id="dev-command" class="portfolio-command active" tabindex="0">Dev</li>
+                            <li id="ux-command" class="portfolio-command" selected aria-selected="true" tabindex="0">UX & UI Projects</li>
+                        </ul>
+                    </div>
+                    <div id="dev" class="portfolio-content-container">
+                        <div class="page-header">
+                            I enjoy bringing a creative perspective to app development. However, my origins reside in the full-stack realm.
+                        </div>
+                        <div class="content-separator-flat"></div>
+                        <div id="dev_content-wrapper">
+                            <div id="dev_content">
+                                <section class="cards">
+                                    <div id="js" class="card activeCard">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="html" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="css" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="asp_net" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="java" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="sql" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="react" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                    <div id="jquery" class="card">
+                                        <div class="card-container">
+                                            <div class="card-content"></div>
+                                        </div>
+                                    </div>
+                                </section>
                                 <div class="content-separator-flat"></div>
-                                <div id="dev_content-wrapper">
-                                    <div id="dev_content">
-                                        <section class="cards">
-                                            <div id="js" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="html" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="css" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="asp_net" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="java" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="sql" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="react" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                            <div id="jquery" class="card">
-                                                <div class="card-container">
-                                                    <div class="card-content"></div>
-                                                </div>
-                                            </div>
-                                        </section>
+                                <div id="js-content" class="card-details activeCardDetails">JS</div>
+                                <div id="html-content" class="card-details">HTML</div>
+                                <div id="css-content" class="card-details">CSS</div>
+                                <div id="asp_net-content" class="card-details">ASP</div>
+                                <div id="java-content" class="card-details">JAVA</div>
+                                <div id="sql-content" class="card-details">SQL</div>
+                                <div id="react-content" class="card-details">REACT</div>
+                                <div id="jquery-content" class="card-details">JQUERY</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ux" class="portfolio-content-container">
+                        <div class="page-header">
+                            We might not like to admit it, but people do judge a book by its cover. Elegant customer journeys are directly conducive to business success.
+                        </div>
+                        <div class="content-separator-flat"></div>
+                        <div class="content-sub-wrapper">
+                            <div class="article">
+                                <div class="article-header-wrapper" tabindex="0">
+                                    <div class="article-header">Fluent Experiences</div>
+                                    <div class="arrow article-drop-arrow">
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="article-description">When "deep-dive" programming, creativity is needed in all phases of development. We're constantly trying to reduce problems to their
+                                    simplest form, design adaptable and reusable solutions, and ensure dynamic usability. However, the phase that I find myself naturally drawn to is the phase
+                                    focused on user experience.
+                                </div>
+                                <div class="article-description">With technology improving at an exponential rate, humans are spending an unprecedented amount of time on devices. Whether that time is 
+                                    spent on Instagram or Astronaut simulation software, fluent user experience is paramount. Check out the examples below to see how I've prioritized a clean, fluent user experience.
+                                </div>
+                                <div class="article-examples">
+                                    <div class="article-example">
+                                        <div class="article-image-description">The LODs website.</div>
+                                        <video autoplay loop controls>
+                                            <source src="/videos/lods_home.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="article-description">
+                                            The <a href="learnondemandsystems.com" target="_blank">learnondemandsystems.com</a> website was built with WordPress using the Avada theme from the Envato Marketplace.
+                                            The Avada theme is fantastic. With some additional CSS, there really isn't anything I can't do with this site. The site is fully responsive and is our flagship at LODs.
+                                        </div>
+                                    </div>
+                                    <div class="article-example">
+                                        <div class="article-image-description">Top down architecture, placing the user exactly where they need to be.</div>
+                                        <video autoplay loop controls>
+                                            <source src="/videos/docs_home.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="article-description">Above, the website is accessible for users how do not have the ability to use a mouse. Traversal of the website is available via
+                                            the arrow and tab keys. Also for users who may not have visibility, content is read aloud via a screen reader using the appropriate attributes.
+                                        </div>
+                                        <div class="article-description">This docs application is one of my recent projects. You can find it here <a href="www.docs.learnondemandsystems.com" target="_blank">docs.learnondemandsystems.com</a>.</div>
+                                    </div>
+                                    <div class="article-example">
+                                        <div class="article-image-description last">The 'Netflix' effect with LODs' catalogs.</div>
+                                        <video autoplay loop controls>
+                                            <source src="/videos/class_browser.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="article-description">
+                                            Seamless, layered UI, allows a user to dive deep into an experience while prioritizing the most important content.
+                                        </div>
+                                        <div class="article-description">
+                                            In all LODs' catalog browsers (classes, courses, learning paths, and the store) I've implemented two cards for every entity. The cards load dynamically based
+                                            on the given filters. The first card is read-only and features a main image, title, author, rating (if available), enrollment status (if available),
+                                            and the bookmark status (if available).
+                                        </div>
+                                        <div class="article-description">
+                                            Hovering over a card will animate the hovered card into a lower level detailed card. The detailed card features
+                                            more detailed information and provides actionable items, such as starting a class or a course, bookmarking an item, or diving into even further details.
+                                        </div>
+                                    </div>
+                                    <div class="article-example">
+                                        <div class="article-image-description last">Company Roadmap.</div>
+                                        <video autoplay loop controls>
+                                            <source src="/videos/roadmap_lods.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="article-description">
+                                            The more you traverse my site, the more you'll know I'm a big fan of WordPress. LODs wanted a way to show customers recently launched items as well as items that were coming down the pipeline.
+                                            The Roadmap page features a subscribe button that allows a customer to subscribe to Roadmap page updates. Wordpress by default, creates RSS feeds for all blog pages. I created a hook between the
+                                            marketing platform, ClickDimensions, and these WP blog feeds. When a new post has been added to these specific blog categories, an email containing the updates is sent to subscribed customers.
+                                        </div>
+                                        <div class="article-description">
+                                            The roadmap page features an accordion that displays 4 different categories of posts. Our curators create posts for recently launched items, items that are coming soon, and items
+                                            that have been planned for future development. Each post is displayed as an excerpt within the accordion, a read more button is available for further details. The bottom of the page
+                                            features the archives. This is simply where all posts go to, LIVE, after they've been deployed for a defined amount of time. The months are collapsible, allowing the user to see more whilst minimizing scrolling.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ux" class="portfolio-content-container">
-                                <div class="page-header">
-                                    We might not like to admit it, but people do judge a book by its cover. Elegant customer journeys are directly conducive to business success.
+                            <div class="article">
+                                <div class="article-header-wrapper" tabindex="0">
+                                    <div class="article-header">Accessibility</div>
+                                    <div class="arrow article-drop-arrow">
+                                        <i class="material-icons">
+                                            keyboard_arrow_down
+                                        </i>
+                                    </div>
                                 </div>
-                                <div class="content-separator-flat"></div>
-                                <div class="content-sub-wrapper">
-                                    <div class="article">
-                                        <div class="article-header-wrapper" tabindex="0">
-                                            <div class="article-header">Fluent Experiences</div>
-                                            <div class="arrow article-drop-arrow">
-                                                <i class="material-icons">
-                                                    keyboard_arrow_down
-                                                </i>
-                                            </div>
+                                <div class="article-description">In my current role, accessibility is paramount. We welcome all types of users and strive to enable people with disabilities
+                                    to perceive, understand, navigate, interact with, and contribute to our platform. As the sole UX/UI Engineer, accessibility is a primary focus.
+                                </div>
+                                <div class="article-examples">
+                                    <!-- <div class="examples-bar-wrapper">
+                                            <div class="examples-arrow"></div>
+                                    </div> -->
+                                    <div class="article-example">
+                                        <div class="article-image-description last">Admin from anywhere with the dynamic Admin menu.</div>
+                                        <video autoplay loop controls>
+                                            <source src="/videos/admin_menu.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="article-description">The admin menu is one of my favorite creations. I'll admit, the general concept was poached from the AWS Console
+                                            but I've made it my own. The administrator options for the Training Management Studio platform by LOD, were previously listed on a singular page. There
+                                            was no search menu and finding what you were looking for often involved pressing CTRL F to use the browsers find functionality.
                                         </div>
-                                        <div class="article-description">When "deep-dive" programming, creativity is needed in all phases of development. We're constantly trying to reduce problems to their
-                                            simplest form, design adaptable and reusable solutions, and ensure dynamic usability. However, the phase that I find myself naturally drawn to is the phase
-                                            focused on user experience.
-                                        </div>
-                                        <div class="article-description">With technology improving at an exponential rate, humans are spending an unprecedented amount of time on devices. Whether that time is 
-                                            spent on Instagram or Astronaut simulation software, fluent user experience is paramount. Check out the examples below to see how I've prioritized a clean, fluent user experience.
-                                        </div>
-                                        <div class="article-examples">
-                                            <div class="article-example">
-                                                <div class="article-image-description">The LODs website.</div>
-                                                <video autoplay loop controls>
-                                                    <source src="/videos/lods_home.mp4" type="video/mp4">
-                                                </video>
-                                                <div class="article-description">
-                                                    The <a href="learnondemandsystems.com" target="_blank">learnondemandsystems.com</a> website was built with WordPress using the Avada theme from the Envato Marketplace.
-                                                    The Avada theme is fantastic. With some additional CSS, there really isn't anything I can't do with this site. The site is fully responsive and is our flagship at LODs.
-                                                </div>
-                                            </div>
-                                            <div class="article-example">
-                                                <div class="article-image-description">Top down architecture, placing the user exactly where they need to be.</div>
-                                                <video autoplay loop controls>
-                                                    <source src="/videos/docs_home.mp4" type="video/mp4">
-                                                </video>
-                                                <div class="article-description">Above, the website is accessible for users how do not have the ability to use a mouse. Traversal of the website is available via
-                                                    the arrow and tab keys. Also for users who may not have visibility, content is read aloud via a screen reader using the appropriate attributes.
-                                                </div>
-                                                <div class="article-description">This docs application is one of my recent projects. You can find it here <a href="www.docs.learnondemandsystems.com" target="_blank">docs.learnondemandsystems.com</a>.</div>
-                                            </div>
-                                            <div class="article-example">
-                                                <div class="article-image-description last">The 'Netflix' effect with LODs' catalogs.</div>
-                                                <video autoplay loop controls>
-                                                    <source src="/videos/class_browser.mp4" type="video/mp4">
-                                                </video>
-                                                <div class="article-description">
-                                                    Seamless, layered UI, allows a user to dive deep into an experience while prioritizing the most important content.
-                                                </div>
-                                                <div class="article-description">
-                                                    In all LODs' catalog browsers (classes, courses, learning paths, and the store) I've implemented two cards for every entity. The cards load dynamically based
-                                                    on the given filters. The first card is read-only and features a main image, title, author, rating (if available), enrollment status (if available),
-                                                    and the bookmark status (if available).
-                                                </div>
-                                                <div class="article-description">
-                                                    Hovering over a card will animate the hovered card into a lower level detailed card. The detailed card features
-                                                    more detailed information and provides actionable items, such as starting a class or a course, bookmarking an item, or diving into even further details.
-                                                </div>
-                                            </div>
-                                            <div class="article-example">
-                                                <div class="article-image-description last">Company Roadmap.</div>
-                                                <video autoplay loop controls>
-                                                    <source src="/videos/roadmap_lods.mp4" type="video/mp4">
-                                                </video>
-                                                <div class="article-description">
-                                                    The more you traverse my site, the more you'll know I'm a big fan of WordPress. LODs wanted a way to show customers recently launched items as well as items that were coming down the pipeline.
-                                                    The Roadmap page features a subscribe button that allows a customer to subscribe to Roadmap page updates. Wordpress by default, creates RSS feeds for all blog pages. I created a hook between the
-                                                    marketing platform, ClickDimensions, and these WP blog feeds. When a new post has been added to these specific blog categories, an email containing the updates is sent to subscribed customers.
-                                                </div>
-                                                <div class="article-description">
-                                                    The roadmap page features an accordion that displays 4 different categories of posts. Our curators create posts for recently launched items, items that are coming soon, and items
-                                                    that have been planned for future development. Each post is displayed as an excerpt within the accordion, a read more button is available for further details. The bottom of the page
-                                                    features the archives. This is simply where all posts go to, LIVE, after they've been deployed for a defined amount of time. The months are collapsible, allowing the user to see more whilst minimizing scrolling.
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div class="article-description">Features include:</div>
+                                        <ul class="article-features">
+                                            <li class="article-description">Open from anywhere. The admin menu lives in the site navigation. Only loading when accessed for the first time.</li>
+                                            <li class="article-description">
+                                                Open and type. The search module retains focus upon initially opening the admin menu. Pressing enter while in the search bar
+                                                selects the first option available. This allows the user to find what they're looking for without ever touching their mouse.
+                                            </li>
+                                            <li class="article-description">History. Your most frequented options are saved in the history section for ease of access.</li>
+                                            <li class="article-description">
+                                                Grouping. The admin menu features two buttons in the top right of the page that allow consumers to group by functionality 
+                                                and alphabetically.
+                                            </li>
+                                            <li class="article-description">Keyboard accessible. Open and utilize the admin menu 100% without touching your mouse.</li>
+                                        </ul>
                                     </div>
-                                    <div class="article">
-                                        <div class="article-header-wrapper" tabindex="0">
-                                            <div class="article-header">Accessibility</div>
-                                            <div class="arrow article-drop-arrow">
-                                                <i class="material-icons">
-                                                    keyboard_arrow_down
-                                                </i>
-                                            </div>
+                                    <div class="article-example">
+                                        <div class="article-image-description">The Learn on Demand Systems Docs application.</div>
+                                        <video autoplay loop controls>
+                                            <source src="/videos/docs_home.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="article-description">Above, the website is accessible for users how do not have the ability to use a mouse. Traversal of the website is available via
+                                            the arrow and tab keys. Also for users who may not have visibility, content is read aloud via a screen reader using the appropriate attributes.
                                         </div>
-                                        <div class="article-description">In my current role, accessibility is paramount. We welcome all types of users and strive to enable people with disabilities
-                                            to perceive, understand, navigate, interact with, and contribute to our platform. As the sole UX/UI Engineer, accessibility is a primary focus.
-                                        </div>
-                                        <div class="article-examples">
-                                            <!-- <div class="examples-bar-wrapper">
-                                                    <div class="examples-arrow"></div>
-                                            </div> -->
-                                            <div class="article-example">
-                                                <div class="article-image-description last">Admin from anywhere with the dynamic Admin menu.</div>
-                                                <video autoplay loop controls>
-                                                    <source src="/videos/admin_menu.mp4" type="video/mp4">
-                                                </video>
-                                                <div class="article-description">The admin menu is one of my favorite creations. I'll admit, the general concept was poached from the AWS Console
-                                                    but I've made it my own. The administrator options for the Training Management Studio platform by LOD, were previously listed on a singular page. There
-                                                    was no search menu and finding what you were looking for often involved pressing CTRL F to use the browsers find functionality.
-                                                </div>
-                                                <div class="article-description">Features include:</div>
-                                                <ul class="article-features">
-                                                    <li class="article-description">Open from anywhere. The admin menu lives in the site navigation. Only loading when accessed for the first time.</li>
-                                                    <li class="article-description">
-                                                        Open and type. The search module retains focus upon initially opening the admin menu. Pressing enter while in the search bar
-                                                        selects the first option available. This allows the user to find what they're looking for without ever touching their mouse.
-                                                    </li>
-                                                    <li class="article-description">History. Your most frequented options are saved in the history section for ease of access.</li>
-                                                    <li class="article-description">
-                                                        Grouping. The admin menu features two buttons in the top right of the page that allow consumers to group by functionality 
-                                                        and alphabetically.
-                                                    </li>
-                                                    <li class="article-description">Keyboard accessible. Open and utilize the admin menu 100% without touching your mouse.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="article-example">
-                                                <div class="article-image-description">The Learn on Demand Systems Docs application.</div>
-                                                <video autoplay loop controls>
-                                                    <source src="/videos/docs_home.mp4" type="video/mp4">
-                                                </video>
-                                                <div class="article-description">Above, the website is accessible for users how do not have the ability to use a mouse. Traversal of the website is available via
-                                                    the arrow and tab keys. Also for users who may not have visibility, content is read aloud via a screen reader using the appropriate attributes.
-                                                </div>
-                                                <div class="article-description last">This docs application is one of my recent projects. You can find it here <a href="www.docs.learnondemandsystems.com" target="_blank">docs.learnondemandsystems.com</a>.</div>
-                                            </div>
-                                        </div>
+                                        <div class="article-description last">This docs application is one of my recent projects. You can find it here <a href="www.docs.learnondemandsystems.com" target="_blank">docs.learnondemandsystems.com</a>.</div>
                                     </div>
-                                    <div class="article-connector"></div>
-                                    <div class="article-image-container"></div>
                                 </div>
                             </div>
+                            <div class="article-connector"></div>
+                            <div class="article-image-container"></div>
                         </div>
                     </div>
                 </div>

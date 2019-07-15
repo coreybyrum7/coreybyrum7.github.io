@@ -30,25 +30,10 @@
     margin-top: 55px;
 }
 
-.homeImage {
-    background-image: url(/images/banner/SF_skyline.JPG);
-    background-size: cover;
-    height: auto;
-    background-position-y: bottom;
-    width: -webkit-fill-available;
-    position: relative;
-}
-
-.banner-image-wrapper {
-    height: auto;
-    background: rgba(0, 0, 0, 0.55);
-    display: flex;
-    flex-basis: 100%;
-}
-
 .content-container {
     width: 100%;
     margin: 0 auto;
+    max-width: 825px;
 }
 
 .content-wrapper {
@@ -115,9 +100,8 @@
 }
 
 .content-separator-flat {
-    border-bottom: 1px solid rgba(87, 86, 86, 0.87);
+    border-bottom: 1px solid #e0e0e0;
     padding: 15px 0;
-    width: 10%;
     text-align: left;
 }
 
@@ -253,7 +237,7 @@
 .card {
     min-width: 84px;
     height: auto;
-    transition: transform 1s;
+    transition: transform 4s;
     cursor: pointer;
     position: relative;
     flex-direction: row
@@ -262,7 +246,8 @@
 .card:hover .card-container {
     position: relative;
     transform: scale(1.15);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition-duration: .5s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.23);
     position: relative;
     z-index: 999;
     background-color: #ffffff;
@@ -278,6 +263,19 @@
 
 .cards .card:last-of-type {
     padding-right: 0;
+}
+
+.card.activeCard .card-container {
+    position: relative;
+    transform: scale(1.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.23);
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.card.activeCard .card-content {
+    background-color: #00000000;
 }
 
 .card-container {
@@ -326,6 +324,14 @@
     position: relative;
     border-radius: 4px;
     background-color: #0000002e;
+}
+
+.card-details {
+    display: none;
+}
+
+.activeCardDetails {
+    display: block;
 }
 
 @media only screen and (max-width: 850px) {

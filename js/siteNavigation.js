@@ -1,4 +1,4 @@
-var homeUrl = "https://coreybyrum7.github.io/index.cshtml";
+var homeUrl = "https://coreybyrum7.github.io";
 var portfolioUrl = "https://coreybyrum7.github.io/pages/portfolio.html";
 var lifeUrl = "https://coreybyrum7.github.io/pages/life.html";
 

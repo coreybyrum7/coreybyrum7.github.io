@@ -237,6 +237,97 @@
     margin: 0;
 }
 
+/*
+    Options on dev tab
+*/
+#dev_content-wrapper {
+    margin-top: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 84px;
+    height: auto;
+    transition: transform 1s;
+    cursor: pointer;
+    position: relative;
+    flex-direction: row
+}
+
+.card:hover .card-container {
+    position: relative;
+    transform: scale(1.15);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    z-index: 999;
+    background-color: #ffffff;
+}
+
+.card:hover .card-content {
+    background-color: #00000000;
+}
+
+.cards .card:first-of-type {
+    padding-left: 0;
+}
+
+.cards .card:last-of-type {
+    padding-right: 0;
+}
+
+.card-container {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    flex-basis: auto;
+    z-index: 1;
+}
+
+#js > .card-container {
+    background-image: url('/images/icons/js-icon.png');
+}
+#html > .card-container {
+    background-image: url('/images/icons/html-icon.png');
+}
+#css > .card-container {
+    background-image: url('/images/icons/css-icon.png');
+}
+#asp_net > .card-container {
+    background-image: url('/images/icons/asp.net-icon.png');
+}
+#java > .card-container {
+    background-image: url('/images/icons/java-icon.png');
+}
+#sql > .card-container {
+    background-image: url('/images/icons/sql-icon.png');
+}
+#react > .card-container {
+    background-image: url('/images/icons/react-icon.png');
+}
+#jquery > .card-container {
+    background-image: url('/images/icons/jquery-icon.png');
+}
+
+.card-content {
+    color: #fff;
+    padding: 10px;
+    width: auto;
+    height: -webkit-fill-available;
+    position: relative;
+    border-radius: 4px;
+    background-color: #0000002e;
+}
+
 @media only screen and (max-width: 850px) {
     .content-wrapper {
         padding: 3rem;
@@ -307,7 +398,7 @@
     .content-sub-wrapper {
         margin: 1rem 0 2rem;
     }
-    .portfolio-commands-wrapper {
+    .portfolio-commands {
         padding: 0 1rem;
     }
     .portfolio-command {
@@ -338,6 +429,12 @@
     }
     .examples-bar-wrapper {
         padding: 18px 0 8px;
+    }
+    .cards {
+        margin: 0 10px;
+    }
+    .card {
+        margin-top: 6px;
     }
 }
 

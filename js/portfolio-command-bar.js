@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#ux').fadeIn('fast');
+    $('#dev').fadeIn('fast');
 
     $('.portfolio-command').click(function () {
         var optionId = $(this).attr('id');

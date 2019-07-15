@@ -38,3 +38,34 @@ a {
     color: #1a73e8;
     text-decoration: none;
 }
+
+footer {
+    max-height: 56px;
+    min-height: 56px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footerContainer {
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    color: #494949b8;
+}
+
+.footer-content {
+    font-size: 12px;
+    float: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+@media only screen and (max-width: 450px) {
+     .footerContainer {
+         padding: 1rem;
+     }
+}

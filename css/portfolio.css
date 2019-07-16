@@ -341,8 +341,8 @@
 #react > .card-container {
     background-image: url('/images/icons/react-icon.png');
 }
-#jquery > .card-container {
-    background-image: url('/images/icons/jquery-icon.png');
+#cloud > .card-container {
+    background-image: url('/images/icons/cloud-icon.png');
 }
 
 .card-content {

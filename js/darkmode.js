@@ -10,6 +10,20 @@ $(document).ready(function () {
         darkmode($(this), toggled);
     });
 
+    $('.darkmode-toggle label.lbl').on('keypress', function (e) {
+        if (e.keyCode == 13) {
+            var elem = $(this).prev();
+            if (elem.prop('checked')) {
+                elem.prop('checked', false);
+            }
+            else {
+                elem.prop('checked', true);
+            }
+            var toggled = $(elem).prop('checked');
+            darkmode($(elem), toggled);
+        }
+    });
+
 });
 
 var darkmode = function (element, toggled) {

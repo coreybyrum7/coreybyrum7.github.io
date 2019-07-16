@@ -47,13 +47,19 @@ footer {
 
 .footerContainer {
     margin: 0 auto;
-    padding: 1rem 4rem;
+    padding: 1.25rem 4rem;
     color: #494949b8;
 }
 
 .footer-content {
     font-size: 12px;
     float: right;
+    color: rgb(66,66,66);
+    font-family: aileronlight;
+}
+
+.darkmode-footer .footer-content {
+    color: #fff !important;
 }
 
 .float-right {

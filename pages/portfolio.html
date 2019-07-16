@@ -25,7 +25,7 @@
 
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header darkmode-header">
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <div class="sidebar-logo" tabindex="0"></div>
@@ -35,7 +35,7 @@
                 <a class="mdl-navigation__link" alt="Resume" target="_blank" href="/images/CoreyByrum_Resume.PNG">Resume</a>
             </nav>
         </div>
-        <main class="mdl-layout__content">
+        <main class="mdl-layout__content darkmode">
             <div class="content-container">
                 <div class="content-wrapper">
                     <div class="portfolio-commands-wrapper">
@@ -51,7 +51,7 @@
                         <div class="page-header" style="display: inline-block; margin-top: 8px;">
                             Dark mode?
                             <div class="darkmode-toggle row press">
-                                <input type="checkbox" id="checked" class="cbx hidden" unchecked />
+                                <input type="checkbox" id="checked" class="cbx hidden" checked />
                                 <label for="checked" class="lbl" tabindex="0"></label>
                               </div>
                         </div>
@@ -101,14 +101,30 @@
                                     </div>
                                 </section>
                                 <div class="content-separator-flat"></div>
-                                <div id="js-content" class="card-details activeCardDetails">JS</div>
-                                <div id="html-content" class="card-details">HTML</div>
-                                <div id="css-content" class="card-details">CSS</div>
-                                <div id="asp_net-content" class="card-details">ASP</div>
-                                <div id="java-content" class="card-details">JAVA</div>
-                                <div id="sql-content" class="card-details">SQL</div>
-                                <div id="react-content" class="card-details">REACT</div>
-                                <div id="cloud-content" class="card-details">CLOUD</div>
+                                <div id="js-content" class="card-details activeCardDetails">
+                                    <div class="card-details-header rainbow rainbow_text_animated">Javascript</div>
+                                </div>
+                                <div id="html-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">HTML</div>
+                                </div>
+                                <div id="css-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">CSS</div>
+                                </div>
+                                <div id="asp_net-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">ASP.net</div>
+                                </div>
+                                <div id="java-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">Java</div>
+                                </div>
+                                <div id="sql-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">SQL</div>
+                                </div>
+                                <div id="react-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">React</div>
+                                </div>
+                                <div id="cloud-content" class="card-details">
+                                    <div class="card-details-header rainbow rainbow_text_animated">Cloud</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +135,7 @@
                         <div class="page-header" style="display: inline-block; margin-top: 8px;">
                             Dark mode?
                             <div class="darkmode-toggle row press">
-                                <input type="checkbox" id="checked-ux-ui" class="cbx hidden" unchecked/>
+                                <input type="checkbox" id="checked-ux-ui" class="cbx hidden" checked/>
                                 <label for="checked-ux-ui" class="lbl"></label>
                               </div>
                         </div>
@@ -256,15 +272,15 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="footerContainer">
-                <div class="footer-content float-left"></div>
-                <div class="footer-content float-right">
-                    Designed by Corey Byrum.
+            <footer class="darkmode-footer">
+                <div class="footerContainer">
+                    <div class="footer-content float-left"></div>
+                    <div class="footer-content float-right">
+                        Designed by Corey Byrum.
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </main>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>

@@ -10,7 +10,7 @@
 3.  ### [Miscellaneous](#miscellaneous)
  
 
-## Granite.js
+### Granite.js
 
 Granite is added everywhere. No duplicates, just different utilities within library; clientlibrarymanager.js, jquery.js, utils.js, granite.js., lodash/modern.js. We can still use Granite via a [NPM module](https://www.npmjs.com/package/granite).
 

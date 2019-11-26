@@ -56,40 +56,42 @@ Needs: User info, Analytics, Browser Information, ..
 
 This is the PDC object after page load:
 
-Analytics: {PageInstanceID: ƒ, PageInfo: ƒ, User: ƒ, Event: ƒ, Product: ƒ, …}<br />
-Browser: {os: "unknown", device: "unknown", isSupportedBrowser: ƒ, getViewport: ƒ}<br />
-Commerce: {updateStoreOrVueLinkHref: ƒ, updateStoreLinksOnConsoles: ƒ, getGamePlatform: ƒ}<br />
-Config: {isGetHelpTopicTemplate: false, PageVars: {…}, Personalisation: {…}, Tracking: {…}}<br />
-DTM: {rs_json: Array(23), getLocaleReportSuite: ƒ, getBrowserName: ƒ}<br />
-DigitalDataAPI: {get: {…}, set: {…}, event: {…}, init: ƒ, timeStamp: ƒ, …}<br />
-ExodusRegions: {SCEJA: Array(13)}<br />
-Func: {updateBtnSniffer: ƒ}<br />
-GamePage: GAME {config: undefined}<br />
-GameTile: {DefaultImage: "//media.playstation.com/is/image/SCEA/GameTile_Default_02Jun14?$GameTile_Small$"}<br />
-GameTileTemplate: ƒ b()<br />
-Header: {PostLoginAjaxUrl: "", AgeGateThreshold: "17", DateFormat: "MM/dd/yyyy", MyPlaystationLoginUrl: "https://io.playstation.com", MyPlaystationCookieDecryptionUrl: "https://io.playstation.com/playstation/psn/decrypt", …}<br />
-Locale: {Mappings: Array(13), Locale: Array(1), matchLocale: ƒ, setLocale: ƒ, getLocale: ƒ}<br />
-MyPlaystationProfile: {checkingUserSignIn: false, signedUserData: {…}, callbacks: Array(0), getSignedUserData: ƒ, redirectToLogin: ƒ, …}<br />
-Navigation: {resizeToTablet: ƒ}<br />
-Profile: {loggedIn: false, setLoggedIn: ƒ, isLoggedIn: ƒ, setContentToId: ƒ, setContentToSmallAvatar: ƒ, …}<br />
-Rating: {PRS: Array(12), SRS: Array(0)}<br />
-Region: {Regions: {…}, matchRegion: ƒ, setRegion: ƒ, getRegion: ƒ, getExodusRegion: ƒ, …}<br />
-SC: {vars: {…}}<br />
-User: {}<br />
-Utilities: {CSS: {…}, Element: {…}, String: {…}, URI: {…}}<br />
-addProperty: ƒ (obj, name, val)<br />
-cqpagepath: "/content/pdc/us/en_US/home.html"<br />
-funcQueue: PDCFunctionQueue {queue: Array(13)}<br />
-getAgeFromSequence: ƒ (o)<br />
-getEntityDefFromMeta: ƒ (j,i)<br />
-isLiveURL: ƒ isLiveURL(hostString)<br />
-isUserConsentedCookie: ƒ ()<br />
-isVisitorAgeKnown: ƒ ()<br />
-isVisitorOldEnough: ƒ (l)<br />
-liveURLs: (3) ["www.playstation.com", "playstation.com", "secure.us.playstation.com"]<br />
-newWindow: ƒ (f,d,b)<br />
-showPageAgeGate: ƒ ()<br />
-ssoAuthenticate: ƒ ()<br />
+```js
+Analytics: {PageInstanceID: ƒ, PageInfo: ƒ, User: ƒ, Event: ƒ, Product: ƒ, …}
+Browser: {os: "unknown", device: "unknown", isSupportedBrowser: ƒ, getViewport: ƒ}
+Commerce: {updateStoreOrVueLinkHref: ƒ, updateStoreLinksOnConsoles: ƒ, getGamePlatform: ƒ}
+Config: {isGetHelpTopicTemplate: false, PageVars: {…}, Personalisation: {…}, Tracking: {…}}
+DTM: {rs_json: Array(23), getLocaleReportSuite: ƒ, getBrowserName: ƒ}
+DigitalDataAPI: {get: {…}, set: {…}, event: {…}, init: ƒ, timeStamp: ƒ, …}
+ExodusRegions: {SCEJA: Array(13)}
+Func: {updateBtnSniffer: ƒ}
+GamePage: GAME {config: undefined}
+GameTile: {DefaultImage: "//media.playstation.com/is/image/SCEA/GameTile_Default_02Jun14?$GameTile_Small$"}
+GameTileTemplate: ƒ b()
+Header: {PostLoginAjaxUrl: "", AgeGateThreshold: "17", DateFormat: "MM/dd/yyyy", MyPlaystationLoginUrl: "https://io.playstation.com", MyPlaystationCookieDecryptionUrl: "https://io.playstation.com/playstation/psn/decrypt", …}
+Locale: {Mappings: Array(13), Locale: Array(1), matchLocale: ƒ, setLocale: ƒ, getLocale: ƒ}
+MyPlaystationProfile: {checkingUserSignIn: false, signedUserData: {…}, callbacks: Array(0), getSignedUserData: ƒ, redirectToLogin: ƒ, …}
+Navigation: {resizeToTablet: ƒ}
+Profile: {loggedIn: false, setLoggedIn: ƒ, isLoggedIn: ƒ, setContentToId: ƒ, setContentToSmallAvatar: ƒ, …}
+Rating: {PRS: Array(12), SRS: Array(0)}
+Region: {Regions: {…}, matchRegion: ƒ, setRegion: ƒ, getRegion: ƒ, getExodusRegion: ƒ, …}
+SC: {vars: {…}}
+User: {}
+Utilities: {CSS: {…}, Element: {…}, String: {…}, URI: {…}}
+addProperty: ƒ (obj, name, val)
+cqpagepath: "/content/pdc/us/en_US/home.html"
+funcQueue: PDCFunctionQueue {queue: Array(13)}
+getAgeFromSequence: ƒ (o)
+getEntityDefFromMeta: ƒ (j,i)
+isLiveURL: ƒ isLiveURL(hostString)
+isUserConsentedCookie: ƒ ()
+isVisitorAgeKnown: ƒ ()
+isVisitorOldEnough: ƒ (l)
+liveURLs: (3) ["www.playstation.com", "playstation.com", "secure.us.playstation.com"]
+newWindow: ƒ (f,d,b)
+showPageAgeGate: ƒ ()
+ssoAuthenticate: ƒ ()
+```
 
 As you can see, there are many empty function calls within the object, perhaps we can remove.
 
